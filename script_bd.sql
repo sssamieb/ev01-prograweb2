@@ -1,0 +1,18 @@
+CREATE DATABASE EV01PW2;
+GO
+
+USE EV01PW2;
+GO
+
+CREATE TABLE Productos (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    descripcion VARCHAR(255) NULL,
+    precio DECIMAL(10,2) NOT NULL,
+    stock INT NOT NULL,
+    estado BIT DEFAULT 1
+);
+GO
+
+SELECT * FROM Productos;
+GO
